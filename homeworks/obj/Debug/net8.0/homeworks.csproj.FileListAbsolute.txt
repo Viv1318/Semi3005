@@ -1,0 +1,14 @@
+C:\Users\Escua\OneDrive\Рабочий стол\semi30.05\homeworks\bin\Debug\net8.0\homeworks.exe
+C:\Users\Escua\OneDrive\Рабочий стол\semi30.05\homeworks\bin\Debug\net8.0\homeworks.deps.json
+C:\Users\Escua\OneDrive\Рабочий стол\semi30.05\homeworks\bin\Debug\net8.0\homeworks.runtimeconfig.json
+C:\Users\Escua\OneDrive\Рабочий стол\semi30.05\homeworks\bin\Debug\net8.0\homeworks.dll
+C:\Users\Escua\OneDrive\Рабочий стол\semi30.05\homeworks\bin\Debug\net8.0\homeworks.pdb
+C:\Users\Escua\OneDrive\Рабочий стол\semi30.05\homeworks\obj\Debug\net8.0\homeworks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Escua\OneDrive\Рабочий стол\semi30.05\homeworks\obj\Debug\net8.0\homeworks.AssemblyInfoInputs.cache
+C:\Users\Escua\OneDrive\Рабочий стол\semi30.05\homeworks\obj\Debug\net8.0\homeworks.AssemblyInfo.cs
+C:\Users\Escua\OneDrive\Рабочий стол\semi30.05\homeworks\obj\Debug\net8.0\homeworks.csproj.CoreCompileInputs.cache
+C:\Users\Escua\OneDrive\Рабочий стол\semi30.05\homeworks\obj\Debug\net8.0\homeworks.dll
+C:\Users\Escua\OneDrive\Рабочий стол\semi30.05\homeworks\obj\Debug\net8.0\refint\homeworks.dll
+C:\Users\Escua\OneDrive\Рабочий стол\semi30.05\homeworks\obj\Debug\net8.0\homeworks.pdb
+C:\Users\Escua\OneDrive\Рабочий стол\semi30.05\homeworks\obj\Debug\net8.0\homeworks.genruntimeconfig.cache
+C:\Users\Escua\OneDrive\Рабочий стол\semi30.05\homeworks\obj\Debug\net8.0\ref\homeworks.dll
