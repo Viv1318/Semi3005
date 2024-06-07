@@ -97,5 +97,25 @@
 
 // Задача 4 Написать программу, которая на входпринимает натуральное число
 // N, а на выходе показывает его цифры через запятую. 
-System.Console.WriteLine("Input N: ");
-int N = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Input N: ");
+// int N = Convert.ToInt32(Console.ReadLine());
+// if (N < 10)
+// {
+//     System.Console.WriteLine(N);
+// }
+// else
+// {
+//     while(N > 0)
+//     {
+//         int currentDigit = N % 10;
+//         N /= 10;
+//         if (N > 0)
+//         {
+//             System.Console.Write(currentDigit + ",");
+//         }
+//         else
+//         {
+//             System.Console.WriteLine(currentDigit);
+//         }
+//     }
+// }
