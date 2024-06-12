@@ -119,3 +119,80 @@
 //         }
 //     }
 // }
+
+// Семинар3
+
+// int[] CreateRandomArray(int numbers, int minRange, int maxRange)
+// {
+//     int[] array = new int[numbers]; // создали массив
+//     Random random = new Random();
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = random.Next(minRange, maxRange + 1);
+//     }
+//     return array;
+// }
+// void PrintArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         System.Console.Write(array[i] + " ");
+//     }
+//     System.Console.WriteLine();// если метод будет вызываться 2 раза подрят между массивами делает разрыв
+// }
+
+// System.Console.WriteLine("Input numbers: ");
+// int numbers = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Input minRange: ");
+// int minRange = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Input maxRange value of array element: ");
+// int maxRange = Convert.ToInt32(Console.ReadLine());
+
+// int[] myArray = CreateRandomArray(numbers, minRange, maxRange);
+// PrintArray(myArray);
+
+
+// int[] myArray = {2, 5, 2, 3, 6, 3, 7, 8, 2, 4};
+// int countEven = 0;
+// for( int i = 0; i < myArray.Length; i++)
+// {
+//         if(myArray[i] % 2 == 0)
+//         {
+//             countEven++;
+//         }
+// }    
+// System.Console.WriteLine(countEven);
+
+// int countNumb = 0;
+// for(int i = 0; i < myArray.Length; i++)
+// {
+//     if(myArray[i] > 10 && myArray[i] < 90)
+//     {
+//         countNumb++;
+//     }
+// }
+// System.Console.WriteLine(countNumb);
+
+
+// задача 3
+double[] array = {0.25, 5.4, 1.3, 2.1, 3.8, 5.2, 3.01};
+double min = array[0];
+for(int i = 0; i < array.Length; i++)
+{
+    if(array[i] < min)
+    {
+        min = array[i];
+    }
+}
+System.Console.WriteLine(min);
+
+double max = array[0];
+for(int i = 0; i < array.Length;i++)
+{
+    if(array[i] > max)
+    {
+        max = array[i];
+    }
+}
+System.Console.WriteLine(max);
+System.Console.WriteLine(max - min);

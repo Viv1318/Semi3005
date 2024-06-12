@@ -12,3 +12,4 @@ C:\Users\Escua\OneDrive\Рабочий стол\semi30.05\homeworks\obj\Debug\ne
 C:\Users\Escua\OneDrive\Рабочий стол\semi30.05\homeworks\obj\Debug\net8.0\homeworks.pdb
 C:\Users\Escua\OneDrive\Рабочий стол\semi30.05\homeworks\obj\Debug\net8.0\homeworks.genruntimeconfig.cache
 C:\Users\Escua\OneDrive\Рабочий стол\semi30.05\homeworks\obj\Debug\net8.0\ref\homeworks.dll
+C:\Users\Escua\OneDrive\Рабочий стол\semi30.05\homeworks\obj\Debug\net8.0\homeworks.sourcelink.json
