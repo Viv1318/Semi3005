@@ -100,44 +100,44 @@
 // создать другой массив, где первый элемент умножается на последний
 // второй на предпоследний и тд
 
-int[] CreateRandomArray(int size, int min, int max)
-{
-    int[] array = new int[size]; // создали массив
-    Random random = new Random();
-    for (int i = 0; i < array.Length; i++)
-    {
-        array[i] = random.Next(min, max + 1);
-    }
-    return array;
-}
-void PrintArray(int[] array)
-{
-    for (int i = 0; i < array.Length; i++)
-    {
-        System.Console.Write(array[i] + " ");
-    }
-    System.Console.WriteLine();// если метод будет вызываться 2 раза подрят между массивами делает разрыв
-}
+// int[] CreateRandomArray(int size, int min, int max)
+// {
+//     int[] array = new int[size]; // создали массив
+//     Random random = new Random();
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = random.Next(min, max + 1);
+//     }
+//     return array;
+// }
+// void PrintArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         System.Console.Write(array[i] + " ");
+//     }
+//     System.Console.WriteLine();// если метод будет вызываться 2 раза подрят между массивами делает разрыв
+// }
 
-System.Console.WriteLine("Input size of array: ");
-int size = Convert.ToInt32(Console.ReadLine());
-System.Console.WriteLine("Input minimal value of array element: ");
-int min = Convert.ToInt32(Console.ReadLine());
-System.Console.WriteLine("Input maximal value of array element: ");
-int max = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Input size of array: ");
+// int size = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Input minimal value of array element: ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Input maximal value of array element: ");
+// int max = Convert.ToInt32(Console.ReadLine());
 
-int[] myArray = CreateRandomArray(size, min, max);
-PrintArray(myArray);
+// int[] myArray = CreateRandomArray(size, min, max);
+// PrintArray(myArray);
 
-// решение
-int[] CompositionArray(int[] array)
-{
-    int[] ResultArray = new int[array.Length / 2];
-    for ( int i = 0; i < ResultArray.Length; i++)
-    {
-        ResultArray[i] = array[i] * array[array.Length - i - 1];
-    }
-    return ResultArray;
-}
-myArray = CompositionArray(myArray);
-PrintArray(myArray);
+// // решение
+// int[] CompositionArray(int[] array)
+// {
+//     int[] ResultArray = new int[array.Length / 2];
+//     for ( int i = 0; i < ResultArray.Length; i++)
+//     {
+//         ResultArray[i] = array[i] * array[array.Length - i - 1];
+//     }
+//     return ResultArray;
+// }
+// myArray = CompositionArray(myArray);
+// PrintArray(myArray);
