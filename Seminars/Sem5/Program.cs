@@ -74,20 +74,45 @@ void PrintMatrix(int[,] matrix)
 
 int[,] matrix = CreateRandomMatrix(rows, colums, min, max);
 
-int [,] EvenNumsToQuad(int[,] matrix)
+// int [,] EvenNumsToQuad(int[,] matrix)
+// {
+//     for (int i = 0; i < rows; i++)
+//     {
+//         for (int j = 0; j < colums; j++)
+//         {
+//             if(i % 2 == 0 && j % 2 == 0)
+//             {
+//                 matrix[i, j] = matrix[i, j] * matrix[i, j];
+//             }
+//         }
+//     }
+//     return matrix;
+// }
+
+// PrintMatrix(matrix);
+// matrix = EvenNumsToQuad(matrix);
+// PrintMatrix(matrix);
+
+
+// задача 2
+// Задайте двумерныймассив. Найдите сумму элементов,
+// находящихся на главной диагонали (с индексами (0, 0), (1, 1) и тд)
+
+int SumOfMainDiagonal(int[,] matrix)
 {
-    for (int i = 0; i < rows; i++)
+    int sum = 0;
+    for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        for (int j = 0; j < colums; j++)
+        for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            if(i % 2 == 0 && j % 2 == 0)
+            if(i == j)
             {
-                matrix[i, j] = matrix[i, j] * matrix[i, j];
+                sum += matrix[i, j];
             }
         }
     }
-    return matrix;
+    return sum;
 }
+
 PrintMatrix(matrix);
-matrix = EvenNumsToQuad(matrix);
-PrintMatrix(matrix);
+System.Console.WriteLine(SumOfMainDiagonal(matrix));
