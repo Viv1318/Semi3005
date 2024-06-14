@@ -98,21 +98,53 @@ int[,] matrix = CreateRandomMatrix(rows, colums, min, max);
 // Задайте двумерныймассив. Найдите сумму элементов,
 // находящихся на главной диагонали (с индексами (0, 0), (1, 1) и тд)
 
-int SumOfMainDiagonal(int[,] matrix)
+// int SumOfMainDiagonal(int[,] matrix)
+// {
+//     int sum = 0;
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             if(i == j)
+//             {
+//                 sum += matrix[i, j];
+//             }
+//         }
+//     }
+//     return sum;
+// }
+
+// PrintMatrix(matrix);
+// System.Console.WriteLine(SumOfMainDiagonal(matrix));
+
+
+// Задача 3
+// Задайте двумерный массив. Сформировать новый одномерный массив,
+// состщящий из средних арифметических элементов каждой
+//  строки исходного массива
+
+double[] SrAr(int[,] matrix)
 {
-    int sum = 0;
+    double[] result = new double[matrix.GetLength(0)];
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        for (int j = 0; j < matrix.GetLength(1); j++)
+        int sum = 0;
+        for (int j = 0; j < matrix.GetLength(1); j++)// перебирает каждый элемент в строке
         {
-            if(i == j)
-            {
-                sum += matrix[i, j];
-            }
+            sum += matrix[i, j];
         }
+        result[i] = (double)sum / matrix.GetLength(1);
     }
-    return sum;
+    return result;
 }
 
+void PrintArray(double[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        System.Console.Write(array[i] + " ");
+    }
+    System.Console.Write("");
+}
 PrintMatrix(matrix);
-System.Console.WriteLine(SumOfMainDiagonal(matrix));
+PrintArray(SrAr(matrix));
