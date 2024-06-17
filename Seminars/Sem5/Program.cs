@@ -123,28 +123,29 @@ int[,] matrix = CreateRandomMatrix(rows, colums, min, max);
 // состщящий из средних арифметических элементов каждой
 //  строки исходного массива
 
-double[] SrAr(int[,] matrix)
-{
-    double[] result = new double[matrix.GetLength(0)];
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        int sum = 0;
-        for (int j = 0; j < matrix.GetLength(1); j++)// перебирает каждый элемент в строке
-        {
-            sum += matrix[i, j];
-        }
-        result[i] = (double)sum / matrix.GetLength(1);
-    }
-    return result;
-}
+// double[] SrAr(int[,] matrix)
+// {
+//     double[] result = new double[matrix.GetLength(0)];
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         int sum = 0;
+//         for (int j = 0; j < matrix.GetLength(1); j++)// перебирает каждый элемент в строке
+//         {
+//             sum += matrix[i, j];
+//         }
+//         result[i] = (double)sum / matrix.GetLength(1);
+//     }
+//     return result;
+// }
 
-void PrintArray(double[] array)
-{
-    for (int i = 0; i < array.Length; i++)
-    {
-        System.Console.Write(array[i] + " ");
-    }
-    System.Console.Write("");
-}
+// void PrintArray(double[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         System.Console.Write(array[i] + " ");
+//     }
+//     System.Console.Write("");
+// }
 PrintMatrix(matrix);
-PrintArray(SrAr(matrix));
+// PrintArray(SrAr(matrix));
+
