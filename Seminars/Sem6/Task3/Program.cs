@@ -2,6 +2,7 @@
 {
     System.Console.WriteLine("Введите ланиские буквы нижнего регистра:");
     string str = Console.ReadLine();
+    str = str.ToLower();// переводим в нижний регистр
     char[] vowels = { 'a', 'e', 'i', 'o', 'u', 'y' };
     int count = 0;
     for(int i = 0; i < str.Length; i++)
